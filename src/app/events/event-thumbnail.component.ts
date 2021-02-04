@@ -30,6 +30,7 @@ import { Component, Input } from '@angular/core'
 export class EventThumbnailComponent{
     @Input() event: any
     
+    // ngStyle can also be used for styling, here ngClass is used
     getStartTimeClass(){
         const isEarlyStart = this.event && this.event.time === '8:00 am'
         // can return object, string or an array, here object is returned
